@@ -1,0 +1,46 @@
+html {
+    background-color: #e2e2e2;
+}
+
+body {
+    width: 90%;
+    text-align: center;
+    margin: 1% auto 1%;
+    padding: 1% 0 0 1%;
+}
+
+canvas {
+    margin-top: 20px;
+    padding: 5px;
+}
+
+.card {
+    margin: 10px;
+}
+
+.main-header {
+    margin-bottom: 10px;
+}
+
+.navigation {
+    max-width: 400px;
+    margin: auto
+}
+
+.portfolio-header {
+    text-align: center;
+}
+
+.portfolio-title {
+    font-size: 1.2em;
+}
+
+.portfolio-items {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.bg-purple {
+    background-color: #6f42c1;
+}
