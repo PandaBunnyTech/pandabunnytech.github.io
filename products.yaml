@@ -1,16 +1,5 @@
 {
   "products": [
-#    {
-#      "name": "Co2 Emissions Map",
-#      "image": "co2-emissions.png",
-#      "desc": "Map of CO2 emissions and major power plants.",
-#      "tech": "Python,Folium,Jupyter Notebook",
-#      "author": "tashvit",
-#      "icons": "oss,web",
-#      "link": "https://tashvit.github.io/co2_emissions_map/",
-#      "subcategory": "DS/ML/AI",
-#      "category": "Open Source Projects"
-#    },
     {
       "name": "Funcrypter",
       "image": "funcrypter.png",
@@ -95,6 +84,50 @@
       "link": "https://pandabunnytech.itch.io/drum-oneshot-01",
       "subcategory": "Audio/Music",
       "category": "Products"
-    }
+    },
+    {
+      "name": "pydoro",
+      "image": "pydoro.png",
+      "desc": "Terminal Pomodoro Timer",
+      "tech": "Python,prompt-toolkit",
+      "author": "JaDogg",
+      "icons": "oss,windows,linux,macos",
+      "link": "https://github.com/JaDogg/pydoro",
+      "subcategory": "Utilities",
+      "category": "Open Source Projects"
+    },
+    {
+      "name": "Yaksha Lang",
+      "image": "yakshalang.png",
+      "desc": "Programming language with off-side rule syntax",
+      "tech": "Yaksha,C++,C99",
+      "author": "YakshaLang",
+      "icons": "oss,windows,linux,macos",
+      "link": "https://yakshalang.github.io/",
+      "subcategory": "Programming Languages",
+      "category": "Open Source Projects"
+    },
+    {
+      "name": "expressPython",
+      "image": "expresspython.png",
+      "desc": " A small Python editor for learning and competitive programming.",
+      "tech": "C++,Qt",
+      "author": "JaDogg",
+      "icons": "oss,windows,linux",
+      "link": "https://github.com/JaDogg/expressPython",
+      "subcategory": "Utilities",
+      "category": "Open Source Projects"
+    },
+    {
+      "name": "sbx",
+      "image": "sbx.png",
+      "desc": " Terminal Flashcards",
+      "tech": "Python",
+      "author": "JaDogg",
+      "icons": "oss,windows,linux,macos",
+      "link": "https://github.com/JaDogg/sbx",
+      "subcategory": "Utilities",
+      "category": "Open Source Projects"
+    },
   ]
 }
