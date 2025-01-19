@@ -261,7 +261,8 @@ function preload() {
  * Draw function for setup
  */
 function setup() {
-    createCanvas(600, 300);
+    var p5jsCanv = createCanvas(600, 300);
+    p5jsCanv.parent("p5jsCanvasGoesHere");
     frameRate(30);
     ship = new BunnyShip(200, 150);
     stars1 = new StarField(-0.2);

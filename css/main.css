@@ -1,46 +1,174 @@
-html {
-    background-color: #e2e2e2;
+:root {
+--bs-primary: #6699cc; /* Light blue */
+--bs-secondary: #b3d6e6; /* Soft pastel blue */
+--bs-accent: #336699; /* Darker blue */
+--bs-text: #2e3e47; /* Dark slate blue */
+--bs-light: #e6f2ff; /* Light sky blue background */
+--bs-dark: #2a3a40; /* Deep blue for contrast */
+--bs-light-transparent: #e6f2ffaa; /* Transparent light sky blue */
+    --standard-font: 'Roboto', sans-serif;
+    --retro-font: 'Courier New', Courier, monospace;
 }
 
 body {
-    width: 90%;
-    text-align: center;
-    margin: 1% auto 1%;
-    padding: 1% 0 0 1%;
+    background-color: var(--bs-light);
+    color: var(--bs-text);
+    font-family: var(--standard-font), sans-serif;
+    letter-spacing: 0.05em;
 }
 
-canvas {
-    margin-top: 20px;
-    padding: 5px;
+.navbar {
+    background-color: var(--bs-primary);
+    border-bottom: 4px solid var(--bs-accent);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.card {
-    margin: 10px;
+.navbar-dark .navbar-brand,
+.navbar-dark .nav-link {
+    color: var(--bs-light);
+    font-weight: bold;
 }
 
-.main-header {
-    margin-bottom: 10px;
+.navbar-dark .nav-link:hover {
+    color: var(--bs-accent);
+    text-shadow: 1px 1px var(--bs-dark);
 }
 
-.navigation {
-    max-width: 400px;
-    margin: auto
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--standard-font), sans-serif;
+    letter-spacing: 0.1em;
 }
 
-.portfolio-header {
-    text-align: center;
+.product-card {
+    border: 3px solid var(--bs-accent);
+    background-color: var(--bs-light);
+    color: var(--bs-text);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: var(--standard-font), sans-serif;
 }
 
-.portfolio-title {
-    font-size: 1.2em;
+a.gh-author, a.gh-author:visited, a.gh-author:active {
+    font-family: var(--retro-font), monospace;
+    color: var(--bs-light);
+    text-decoration: none !important;
+    filter: grayscale(50%);
+    transition: filter 0.3s ease, transform 0.3s ease;
 }
 
-.portfolio-items {
+a.gh-author:hover {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.card-title {
+    color: var(--bs-dark);
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-top: -1.6em;
+    display: block;
+    background: var(--bs-light-transparent);
+    overflow: hidden;
     width: 100%;
-    display: inline-block;
-    margin-bottom: 30px;
+    height: 1.6em;
+    padding: 0.3em;
 }
 
-.bg-purple {
-    background-color: #6f42c1;
+.card-body {
+    color: var(--bs-dark);
+    padding: 0;
+}
+
+.description, .product-icons {
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+
+.description {
+    height: 7.5em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.9em;
+}
+
+.card-author {
+    z-index: 999;
+    padding-top: 0.3em;
+    padding-left: 0.3em;
+    padding-bottom: 0.3em;
+    background: var(--bs-light-transparent);
+    margin: 0;
+    backdrop-filter: blur(5px);
+    font-family: var(--retro-font), monospace;
+    font-size: 0.8em;
+}
+
+.card-img-top {
+    margin-top: -1.9em;
+    object-fit: cover;
+    width: 100%;
+    height: 17em;
+}
+
+.category-title {
+    color: var(--bs-dark);
+    margin-top: 30px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.meta-category-title {
+    color: var(--bs-dark);
+    margin-top: 30px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--bs-dark);
+}
+
+.product-container {
+    padding-bottom: 100px;
+}
+
+footer {
+    background-color: var(--bs-dark);
+    color: var(--bs-light);
+    font-family: var(--standard-font), sans-serif;
+    font-size: 0.9em;
+    letter-spacing: 0.05em;
+}
+
+.btn-custom {
+    background-color: var(--bs-primary);
+    border: 2px solid var(--bs-dark);
+    color: var(--bs-light);
+    font-family: var(--standard-font), sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    letter-spacing: 0.1em;
+}
+
+.btn-custom:hover {
+    background-color: var(--bs-accent);
+    color: var(--bs-light);
+    transform: translateY(-2px);
+}
+
+
+blockquote {
+    font-family: var(--standard-font), sans-serif;
+    font-size: 1.2em;
+    font-style: italic;
+    color: var(--bs-dark);
+    border-left: 4px solid var(--bs-accent);
+    padding-left: 10px;
+}
+
+#p5jsCanvasGoesHere {
+    text-align: center;
 }

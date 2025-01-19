@@ -1,0 +1,100 @@
+{
+  "products": [
+#    {
+#      "name": "Co2 Emissions Map",
+#      "image": "co2-emissions.png",
+#      "desc": "Map of CO2 emissions and major power plants.",
+#      "tech": "Python,Folium,Jupyter Notebook",
+#      "author": "tashvit",
+#      "icons": "oss,web",
+#      "link": "https://tashvit.github.io/co2_emissions_map/",
+#      "subcategory": "DS/ML/AI",
+#      "category": "Open Source Projects"
+#    },
+    {
+      "name": "Funcrypter",
+      "image": "funcrypter.png",
+      "desc": "Basic encrypter/decrypter.",
+      "tech": "Python,PyQt5",
+      "author": "tashvit",
+      "icons": "oss,windows,linux,macos",
+      "link": "https://github.com/tashvit/funcrypter",
+      "subcategory": "Utilities",
+      "category": "Open Source Projects"
+    },
+    {
+      "name": "Voltage Resistance Calculator",
+      "image": "voltage-resistance.png",
+      "desc": "Calculate resisters needed to reduce voltage.",
+      "tech": "Python,Tkinter",
+      "author": "tashvit",
+      "icons": "oss,windows,linux,macos",
+      "link": "https://github.com/tashvit/voltage_resistance_calculator",
+      "subcategory": "Utilities",
+      "category": "Open Source Projects"
+    },
+    {
+      "name": "Alarm Clock/Timer",
+      "image": "alarm-clock-timer.png",
+      "desc": "Play an alarm sound at a target time",
+      "tech": "Python,Tkinter",
+      "author": "tashvit",
+      "icons": "oss,windows,linux,macos",
+      "link": "https://github.com/tashvit/alarm_clock",
+      "subcategory": "Utilities",
+      "category": "Open Source Projects"
+    },
+    {
+      "name": "City Distance Calculator",
+      "image": "city-distance-calculator.png",
+      "desc": "Uses Haversine formula to calculate distances using latitude and longitude coordinates",
+      "tech": "Python,PyQt5,requests,BeautifulSoup",
+      "author": "tashvit",
+      "icons": "oss,windows,linux,macos",
+      "link": "https://github.com/tashvit/city_distance_calculator",
+      "subcategory": "Utilities",
+      "category": "Open Source Projects"
+    },
+    {
+      "name": "Sales Tax Calculator",
+      "image": "sales-tax-calculator.png",
+      "desc": "Returns sales tax of a chosen country plus the total cost with tax",
+      "tech": "Python,PyQt5",
+      "author": "tashvit",
+      "icons": "oss,windows,linux,macos",
+      "link": "https://github.com/tashvit/sales_tax_calculator",
+      "subcategory": "Utilities",
+      "category": "Open Source Projects"
+    },
+    {
+      "name": "Xido",
+      "image": "xido.png",
+      "desc": "SF2 Player for Jamming and Learning with built-in effects",
+      "tech": "sf2,midi",
+      "icons": "windows",
+      "link": "https://pandabunnytech.itch.io/xido",
+      "subcategory": "Audio/Music",
+      "category": "Products"
+    },
+    {
+      "name": "Mido-J1",
+      "image": "mido.png",
+      "desc": "Create music & jam with your MPK Mini Plus",
+      "tech": "sf2,midi",
+      "icons": "windows",
+      "link": "https://pandabunnytech.itch.io/mido-j1",
+      "subcategory": "Audio/Music",
+      "category": "Products"
+    },
+    {
+      "name": "Drum Oneshot Kit #01",
+      "image": "oneshot1.png",
+      "desc": "synth-drum,kick,snare,tom oneshot sample kit #01",
+      "tech": "wav",
+      "icons": "music",
+      "link": "https://pandabunnytech.itch.io/drum-oneshot-01",
+      "subcategory": "Audio/Music",
+      "category": "Products"
+    }
+  ]
+}

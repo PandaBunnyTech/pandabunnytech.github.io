@@ -32,10 +32,45 @@
     </div>
 </nav>
 
+<!-- PRODUCTS_START -->
 <div class="container mt-12 product-container">
-    <h1>404</h1>
-    <h2>Page not found</h2>
+    {% for category in data.categories %}
+    <h2 class="meta-category-title">{{ category.name }}</h2>
+    {% for subcat in category.subcategories %}
+    <h3 class="category-title">{{ subcat.name }}</h3>
+    <div class="row">
+        {% for product in subcat.products %}
+        <div class="col-md-3 mb-3">
+            <div class="card product-card" onclick="location.href='{{ product.link }}'">
+                <p class="card-author">
+                    <small>
+                        <a class="badge bg-primary gh-author" href="https://github.com/{{ product.author }}/">
+                            <img src="assets/icons/gh.svg"
+                                 alt="Github">&nbsp;{{ product.author }}
+                        </a>
+                    </small>
+                    {% for icon in product.icons %}
+                    <img class="product-icon" width="16px" height="16px" src="assets/icons/{{ icon }}.svg" alt="{{ icon }}">
+                    {% endfor %}
+                </p>
+                <img src="assets/products/{{ product.image }}" class="card-img-top" alt="{{ product.name }}">
+                <div class="card-body">
+                    <h6 class="card-title"><small>{{ product.name }}</small></h6>
+                    <p class="description">{{ product.desc }}
+                        {% for tag in product.tech %}
+                        <span class="badge bg-secondary">{{ tag }}</span>
+                        {% endfor %}
+                    </p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% endfor %}
+    {% endfor %}
+
 </div>
+<!-- PRODUCTS_END -->
 
 <footer class="bg-dark text-white text-center py-3 fixed-bottom">
     <p>&copy; 2025 PandaBunnyTech</p>

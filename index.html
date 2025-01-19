@@ -1,227 +1,319 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <title>Panda Bunny Tech</title>
-    <!-- TODO Place a good description here -->
-    <meta name="description" content="Panda Bunny Tech - Blah">
-    <meta name="author" content="tashvit">
-    <!-- reference - https://getbootstrap.com/docs/5.1/getting-started/introduction/ -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- bootstrap css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <!-- Our custom styles -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PandaBunnyTech</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" href="favicon.ico">
 </head>
-
-<body class="border shadow-lg">
-
-<!-- Main section of the body -->
-<main>
-    <img src="assets/logo.png" style="width: 100px" alt="panda smirking logo">
-    <h1 class="main-header display-5 fw-bold">Panda Bunny Tech</h1>
-    <img src="assets/underline.png" style="width: 100px" alt="underline">
-    <p>Personal blog and portfolio of Nethasha Vithana
-        (<a href="https://github.com/tashvit">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                 class="bi bi-github" viewBox="0 0 16 16">
-                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-            </svg>
-            tashvit</a>).
-    </p>
-    <div class="navigation">
-        <ul class="nav nav-pills nav-fill">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/articles.html">Articles</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/games.html">Games</a>
-            </li>
-        </ul>
-    </div>
-    <!-- ---------------- Note ---------- P5 JS Canvas Comes here ------------ Note -------- -->
-</main>
-
-<!-- TODO Add portfolio stuff here -->
-<div class="portfolio">
-    <h2 class="portfolio-header display-7 fw-bold">Portfolio</h2>
-    <img src="assets/underline.png" style="width: 50px" alt="underline">
-    <div class="portfolio-items">
-        <div class="card-group">
-            <!-- CO2 Emissions Map -->
-            <div class="card" style="width: 18rem;">
-                <img src="assets/co2-emissions.png" class="card-img-top" alt="CO2 emissions">
-                <div class="card-body">
-                    <h5 class="card-title">Co2 Emissions Map</h5>
-                    <!-- TODO Write a better description -->
-                    <p class="card-text">Color coded map that shows CO2 emissions in 2019 by country, plus the world's
-                        major
-                        power plants.
-                        <span class="portfolio-technologies">
-                    <span class="badge rounded-pill bg-primary">Python</span>
-                    <span class="badge rounded-pill bg-secondary">Folium</span>
-                    <span class="badge rounded-pill bg-secondary">Jupyter Notebook</span>
-                </span>
-                    </p>
-                    <a href="https://github.com/tashvit/co2_emissions_map" class="btn btn-primary">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                             class="bi bi-github" viewBox="0 0 16 16">
-                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                        </svg>
-                        GitHub</a>
-                    <a href="https://tashvit.github.io/co2_emissions_map/" class="btn btn-primary">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                             class="bi bi-globe" viewBox="0 0 16 16">
-                            <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/>
-                        </svg>
-                        Live</a>
-                </div>
-            </div>
-            <!-- End portfolio item -->
-
-            <!-- Funcrypter -->
-            <div class="card" style="width: 18rem;">
-                <img src="assets/funcrypter.png" class="card-img-top" alt="Funcrypter">
-                <div class="card-body">
-                    <h5 class="card-title">Funcrypter</h5>
-                    <!-- TODO Write a better description -->
-                    <p class="card-text">Basic encrypter/decrypter.
-                        <span class="portfolio-technologies">
-                    <span class="badge rounded-pill bg-primary">Python</span>
-                    <span class="badge rounded-pill bg-secondary">PyQt5</span>
-                </span>
-                    </p>
-                    <a href="https://github.com/tashvit/funcrypter" class="btn btn-primary">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                             class="bi bi-github" viewBox="0 0 16 16">
-                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                        </svg>
-                        GitHub</a>
-                </div>
-            </div>
-            <!-- End portfolio item -->
-
-            <!-- Voltage Resistance Calculator -->
-            <div class="card" style="width: 18rem;">
-                <img src="assets/voltage-resistance.png" class="card-img-top" alt="Voltage resistance">
-                <div class="card-body">
-                    <h5 class="card-title">Voltage Resistance Calculator</h5>
-                    <!-- TODO Write a better description -->
-                    <p class="card-text">Calculates the resistor values required to produce a desired voltage output.
-                        <span class="portfolio-technologies">
-                    <span class="badge rounded-pill bg-primary">Python</span>
-                    <span class="badge rounded-pill bg-secondary">Tkinter</span>
-                </span>
-                    </p>
-                    <a href="https://github.com/tashvit/voltage_resistance_calculator" class="btn btn-primary">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                             class="bi bi-github" viewBox="0 0 16 16">
-                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                        </svg>
-                        GitHub</a>
-                </div>
-            </div>
-            <!-- End portfolio item -->
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img src="assets/panda-logo.png" alt="" width="30" height="30" class="d-inline-block align-text-top">
+            <span class="d-inline-block align-text-top">PandaBunnyTech</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+            </ul>
         </div>
-
-        <div class="card-group">
-            <!-- Alarm Clock/Timer -->
-            <div class="card" style="width: 18rem;">
-                <img src="assets/alarm-clock-timer.png" class="card-img-top" alt="Alarm Clock/Timer">
-
-                <div class="card-body">
-                    <h5 class="card-title">Alarm Clock/Timer</h5>
-                    <!-- TODO Write a better description -->
-                    <p class="card-text">Alarm Clock - a simple clock where it plays a sound after X number of
-                        minutes/seconds or at a particular time.
-                        <span class="portfolio-technologies">
-                    <span class="badge rounded-pill bg-primary">Python</span>
-                    <span class="badge rounded-pill bg-secondary">Tkinter</span>
-                </span>
-                    </p>
-                    <a href="https://github.com/tashvit/alarm_clock" class="btn btn-primary">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                             class="bi bi-github" viewBox="0 0 16 16">
-                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                        </svg>
-                        GitHub</a>
-                </div>
-            </div>
-            <!-- End portfolio item -->
-
-            <!-- City distance calculator - PyQt5 -->
-            <div class="card" style="width: 18rem;">
-                <img src="assets/city-distance-calculator.png" class="card-img-top" alt="city distance calculator">
-                <div class="card-body">
-                    <h5 class="card-title">City Distance Calculator</h5>
-                    <!-- TODO Write a better description -->
-                    <p class="card-text">Uses Haversine formula to calculate distances using latitude and longitude
-                        coordinates
-                        <span class="portfolio-technologies">
-                    <span class="badge rounded-pill bg-primary">Python</span>
-                    <span class="badge rounded-pill bg-secondary">PyQt5</span>
-                    <span class="badge rounded-pill bg-secondary">requests</span>
-                    <span class="badge rounded-pill bg-secondary">BeautifulSoup</span>
-                </span>
-                    </p>
-                    <a href="https://github.com/tashvit/city_distance_calculator" class="btn btn-primary">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                             class="bi bi-github" viewBox="0 0 16 16">
-                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                        </svg>
-                        GitHub</a>
-                </div>
-            </div>
-            <!-- End portfolio item -->
-
-            <!-- Sales tax calculator - PyQt5 -->
-            <div class="card" style="width: 18rem;">
-                <img src="assets/sales-tax-calculator.png" class="card-img-top" alt="Sales tax calculator">
-                <div class="card-body">
-                    <h5 class="card-title">Sales Tax Calculator</h5>
-                    <!-- TODO Write a better description -->
-                    <p class="card-text">Returns sales tax of a chosen country plus the total cost with tax.
-                        <span class="portfolio-technologies">
-                    <span class="badge rounded-pill bg-primary">Python</span>
-                    <span class="badge rounded-pill bg-secondary">PyQt5</span>
-                </span>
-                    </p>
-                    <a href="https://github.com/tashvit/sales_tax_calculator" class="btn btn-primary">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                             class="bi bi-github" viewBox="0 0 16 16">
-                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                        </svg>
-                        GitHub</a>
-                </div>
-            </div>
-            <!-- End portfolio item -->
-
-        </div>
-
     </div>
+</nav>
+
+<!-- PRODUCTS_START -->
+<div class="container mt-12 product-container">
+    
+    <h2 class="meta-category-title">Products</h2>
+    
+    <h3 class="category-title">Audio/Music</h3>
+    <div class="row">
+        
+        <div class="col-md-3 mb-3">
+            <div class="card product-card" onclick="location.href='https://pandabunnytech.itch.io/xido'">
+                <p class="card-author">
+                    <small>
+                        <a class="badge bg-primary gh-author" href="https://github.com/PandaBunnyTech/">
+                            <img src="assets/icons/gh.svg"
+                                 alt="Github">&nbsp;PandaBunnyTech
+                        </a>
+                    </small>
+                    
+                    <img class="product-icon" width="16px" height="16px" src="assets/icons/windows.svg" alt="windows">
+                    
+                </p>
+                <img src="assets/products/xido.png" class="card-img-top" alt="Xido">
+                <div class="card-body">
+                    <h6 class="card-title"><small>Xido</small></h6>
+                    <p class="description">SF2 Player for Jamming and Learning with built-in effects.
+                        
+                        <span class="badge bg-secondary">midi</span>
+                        
+                        <span class="badge bg-secondary">sf2</span>
+                        
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-3 mb-3">
+            <div class="card product-card" onclick="location.href='https://pandabunnytech.itch.io/mido-j1'">
+                <p class="card-author">
+                    <small>
+                        <a class="badge bg-primary gh-author" href="https://github.com/PandaBunnyTech/">
+                            <img src="assets/icons/gh.svg"
+                                 alt="Github">&nbsp;PandaBunnyTech
+                        </a>
+                    </small>
+                    
+                    <img class="product-icon" width="16px" height="16px" src="assets/icons/windows.svg" alt="windows">
+                    
+                </p>
+                <img src="assets/products/mido.png" class="card-img-top" alt="Mido-J1">
+                <div class="card-body">
+                    <h6 class="card-title"><small>Mido-J1</small></h6>
+                    <p class="description">Create music & jam with your MPK Mini Plus.
+                        
+                        <span class="badge bg-secondary">midi</span>
+                        
+                        <span class="badge bg-secondary">sf2</span>
+                        
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-3 mb-3">
+            <div class="card product-card" onclick="location.href='https://pandabunnytech.itch.io/drum-oneshot-01'">
+                <p class="card-author">
+                    <small>
+                        <a class="badge bg-primary gh-author" href="https://github.com/PandaBunnyTech/">
+                            <img src="assets/icons/gh.svg"
+                                 alt="Github">&nbsp;PandaBunnyTech
+                        </a>
+                    </small>
+                    
+                    <img class="product-icon" width="16px" height="16px" src="assets/icons/music.svg" alt="music">
+                    
+                </p>
+                <img src="assets/products/oneshot1.png" class="card-img-top" alt="Drum Oneshot Kit #01">
+                <div class="card-body">
+                    <h6 class="card-title"><small>Drum Oneshot Kit #01</small></h6>
+                    <p class="description">synth-drum,kick,snare,tom oneshot sample kit #01.
+                        
+                        <span class="badge bg-secondary">wav</span>
+                        
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    
+    <h2 class="meta-category-title">Open Source Projects</h2>
+    
+    <h3 class="category-title">Utilities</h3>
+    <div class="row">
+        
+        <div class="col-md-3 mb-3">
+            <div class="card product-card" onclick="location.href='https://github.com/tashvit/funcrypter'">
+                <p class="card-author">
+                    <small>
+                        <a class="badge bg-primary gh-author" href="https://github.com/tashvit/">
+                            <img src="assets/icons/gh.svg"
+                                 alt="Github">&nbsp;tashvit
+                        </a>
+                    </small>
+                    
+                    <img class="product-icon" width="16px" height="16px" src="assets/icons/oss.svg" alt="oss">
+                    
+                    <img class="product-icon" width="16px" height="16px" src="assets/icons/windows.svg" alt="windows">
+                    
+                    <img class="product-icon" width="16px" height="16px" src="assets/icons/linux.svg" alt="linux">
+                    
+                    <img class="product-icon" width="16px" height="16px" src="assets/icons/macos.svg" alt="macos">
+                    
+                </p>
+                <img src="assets/products/funcrypter.png" class="card-img-top" alt="Funcrypter">
+                <div class="card-body">
+                    <h6 class="card-title"><small>Funcrypter</small></h6>
+                    <p class="description">Basic encrypter/decrypter.
+                        
+                        <span class="badge bg-secondary">PyQt5</span>
+                        
+                        <span class="badge bg-secondary">Python</span>
+                        
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-3 mb-3">
+            <div class="card product-card" onclick="location.href='https://github.com/tashvit/voltage_resistance_calculator'">
+                <p class="card-author">
+                    <small>
+                        <a class="badge bg-primary gh-author" href="https://github.com/tashvit/">
+                            <img src="assets/icons/gh.svg"
+                                 alt="Github">&nbsp;tashvit
+                        </a>
+                    </small>
+                    
+                    <img class="product-icon" width="16px" height="16px" src="assets/icons/oss.svg" alt="oss">
+                    
+                    <img class="product-icon" width="16px" height="16px" src="assets/icons/windows.svg" alt="windows">
+                    
+                    <img class="product-icon" width="16px" height="16px" src="assets/icons/linux.svg" alt="linux">
+                    
+                    <img class="product-icon" width="16px" height="16px" src="assets/icons/macos.svg" alt="macos">
+                    
+                </p>
+                <img src="assets/products/voltage-resistance.png" class="card-img-top" alt="Voltage Resistance Calculator">
+                <div class="card-body">
+                    <h6 class="card-title"><small>Voltage Resistance Calculator</small></h6>
+                    <p class="description">Calculate resisters needed to reduce voltage.
+                        
+                        <span class="badge bg-secondary">Python</span>
+                        
+                        <span class="badge bg-secondary">Tkinter</span>
+                        
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-3 mb-3">
+            <div class="card product-card" onclick="location.href='https://github.com/tashvit/alarm_clock'">
+                <p class="card-author">
+                    <small>
+                        <a class="badge bg-primary gh-author" href="https://github.com/tashvit/">
+                            <img src="assets/icons/gh.svg"
+                                 alt="Github">&nbsp;tashvit
+                        </a>
+                    </small>
+                    
+                    <img class="product-icon" width="16px" height="16px" src="assets/icons/oss.svg" alt="oss">
+                    
+                    <img class="product-icon" width="16px" height="16px" src="assets/icons/windows.svg" alt="windows">
+                    
+                    <img class="product-icon" width="16px" height="16px" src="assets/icons/linux.svg" alt="linux">
+                    
+                    <img class="product-icon" width="16px" height="16px" src="assets/icons/macos.svg" alt="macos">
+                    
+                </p>
+                <img src="assets/products/alarm-clock-timer.png" class="card-img-top" alt="Alarm Clock/Timer">
+                <div class="card-body">
+                    <h6 class="card-title"><small>Alarm Clock/Timer</small></h6>
+                    <p class="description">Play an alarm sound at a target time.
+                        
+                        <span class="badge bg-secondary">Python</span>
+                        
+                        <span class="badge bg-secondary">Tkinter</span>
+                        
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-3 mb-3">
+            <div class="card product-card" onclick="location.href='https://github.com/tashvit/city_distance_calculator'">
+                <p class="card-author">
+                    <small>
+                        <a class="badge bg-primary gh-author" href="https://github.com/tashvit/">
+                            <img src="assets/icons/gh.svg"
+                                 alt="Github">&nbsp;tashvit
+                        </a>
+                    </small>
+                    
+                    <img class="product-icon" width="16px" height="16px" src="assets/icons/oss.svg" alt="oss">
+                    
+                    <img class="product-icon" width="16px" height="16px" src="assets/icons/windows.svg" alt="windows">
+                    
+                    <img class="product-icon" width="16px" height="16px" src="assets/icons/linux.svg" alt="linux">
+                    
+                    <img class="product-icon" width="16px" height="16px" src="assets/icons/macos.svg" alt="macos">
+                    
+                </p>
+                <img src="assets/products/city-distance-calculator.png" class="card-img-top" alt="City Distance Calculator">
+                <div class="card-body">
+                    <h6 class="card-title"><small>City Distance Calculator</small></h6>
+                    <p class="description">Uses Haversine formula to calculate distances using latitude and longitude coordinates.
+                        
+                        <span class="badge bg-secondary">BeautifulSoup</span>
+                        
+                        <span class="badge bg-secondary">PyQt5</span>
+                        
+                        <span class="badge bg-secondary">Python</span>
+                        
+                        <span class="badge bg-secondary">requests</span>
+                        
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-3 mb-3">
+            <div class="card product-card" onclick="location.href='https://github.com/tashvit/sales_tax_calculator'">
+                <p class="card-author">
+                    <small>
+                        <a class="badge bg-primary gh-author" href="https://github.com/tashvit/">
+                            <img src="assets/icons/gh.svg"
+                                 alt="Github">&nbsp;tashvit
+                        </a>
+                    </small>
+                    
+                    <img class="product-icon" width="16px" height="16px" src="assets/icons/oss.svg" alt="oss">
+                    
+                    <img class="product-icon" width="16px" height="16px" src="assets/icons/windows.svg" alt="windows">
+                    
+                    <img class="product-icon" width="16px" height="16px" src="assets/icons/linux.svg" alt="linux">
+                    
+                    <img class="product-icon" width="16px" height="16px" src="assets/icons/macos.svg" alt="macos">
+                    
+                </p>
+                <img src="assets/products/sales-tax-calculator.png" class="card-img-top" alt="Sales Tax Calculator">
+                <div class="card-body">
+                    <h6 class="card-title"><small>Sales Tax Calculator</small></h6>
+                    <p class="description">Returns sales tax of a chosen country plus the total cost with tax.
+                        
+                        <span class="badge bg-secondary">PyQt5</span>
+                        
+                        <span class="badge bg-secondary">Python</span>
+                        
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    
+
 </div>
-<!-- TODO Why do we put scripts here? -->
-<!-- bootstrap popper TODO: Remove this if we are not using popups -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
-        integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
-        crossorigin="anonymous"></script>
-<!-- bootstrap javascript -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
-        integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
-        crossorigin="anonymous"></script>
-<!-- p5js for drawing stuff -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"
-        integrity="sha512-w1Bktzax55ZbjW5Mqjz8+mKz4KqRjEUU35Dpq/ath29yskKqIGwNIHiFNp03m/OiJWDXvdQ1/g6aV+l4PeVO7Q=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<!-- Our script file -->
-<script src="js/bunny.js"></script>
+<!-- PRODUCTS_END -->
 
+<footer class="bg-dark text-white text-center py-3 fixed-bottom">
+    <p>&copy; 2025 PandaBunnyTech</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    document.querySelectorAll('.tooltip-icon').forEach(icon => {
+        icon.addEventListener('mouseover', function () {
+            this.title = this.getAttribute('title');
+        });
+    });
+</script>
 </body>
 </html>
